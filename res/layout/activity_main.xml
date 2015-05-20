@@ -3,7 +3,28 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="${packageName}.${activityClass}"
-    android:id="@+id/layout" >
+    android:id="@+id/layout"
+    android:background="@android:color/black" >
 
+    <com.example.customfontandroid.TvFontComic
+        android:id="@+id/tvFontComic1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="TvFontComic" />
+
+    <com.example.customfontandroid.EtFontComic
+        android:id="@+id/etFontComic1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tvFontComic1"
+        android:layout_marginTop="144dp"
+        android:ems="10"
+        android:text="EtFontComic" >
+
+        <requestFocus />
+    </com.example.customfontandroid.EtFontComic>
 
 </RelativeLayout>
